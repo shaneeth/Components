@@ -1,0 +1,23 @@
+body {
+    padding: 2em 4em;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;  
+}
+
+.actions .action {
+    text-decoration: none;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.actions .action .content {
+    height: 200px;
+    width: 150px;
+    background-color: #cccccc;
+}

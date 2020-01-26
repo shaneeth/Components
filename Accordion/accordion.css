@@ -1,0 +1,96 @@
+body {
+    padding: 2em 4em;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;  
+}
+
+.accordion {
+    background-color: #ffffff;
+    width: 100%;
+    border: 1px solid #cccccc;
+    margin-bottom: 30px;    
+}
+
+.accordion .accordion-header {
+    padding: 1em;
+    width: 100%;
+    background-color: #fafafa;
+    position: relative;
+    color: #333333;
+}
+
+.accordion.active .accordion-header {
+    background-color: #f0f0f0;
+}
+
+.accordion .accordion-header .title {
+    margin: 0;
+    font-size: 16px;
+    padding-right: 25px;
+}
+
+.accordion .accordion-header .action {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.accordion .accordion-header .action::after {
+    content: "\002B";
+    cursor: pointer;
+}
+
+.accordion.active .accordion-header .action::after {
+    content: "\2212";
+}
+
+.accordion .sub-titles {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.accordion .sub-titles .sub-title {
+    padding: 0 15px;
+    width: 25%;
+    font-size: 14px;
+}
+
+.accordion .sub-titles .sub-title:first-child {
+    padding-left: 0;
+}
+
+.accordion .sub-titles .sub-title:last-child {
+    padding-right: 0;
+}
+
+.accordion .sub-titles .sub-title .title {
+    padding: 0;
+    font-size: 14px;
+    color: #555555;
+}
+
+.accordion .sub-titles .sub-title .text {
+    color: #888888;
+    margin-top: 5px;
+}
+
+.accordion .accordion-content {
+    overflow-y: hidden;
+    max-height: 0;
+	transition: all 0.5s ease;
+}
+
+.accordion .accordion-content .content {
+    padding: 15px;;
+    color: #333333;
+    line-height: 26px;
+}
